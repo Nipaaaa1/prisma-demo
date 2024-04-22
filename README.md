@@ -1,6 +1,6 @@
-# A simple CRUD project with TypeScript + Prisma + Express + PostgreSQL
+# A simple CRUD project with TypeScript + Prisma + Express + Supabase
 
-This is an API project that I made when I was learning **Prisma**. I'm using postgres as the database but you could use other databases, [click here to learn more about databases.](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch)
+This is an API project that I made when I was learning **Prisma**. I'm using Supabase (postgres) as the database but you could use other databases, [click here to learn more about databases.](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch)
 
 My project is hosted on **Cyclic**.
 
