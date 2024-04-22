@@ -10,46 +10,52 @@ app.use(express.json())
 
 
 app.get('/api/users', async (req: Request, res: Response) => {
-    const data = {
+    const getAllUsers = {
         data: await prisma.user.findMany()
     }
-    res.send(data)
+    res.send(getAllUsers)
 })
 
 app.get('/api/users/:id', async (req: Request, res: Response) => {
-    const data = {
+    const getUser = {
         data: await prisma.user.findFirst({
             where: {
                 id: req.params.id
             }
         })
     }
-    res.send(data)
+    res.send(getUser)
 })
 
 app.post('/api/users', async (req: Request, res: Response) => {
-    const createUser = await prisma.user.create({
-        data: req.body
-    })
+    const createUser = {
+        data: await prisma.user.create({
+            data: req.body
+        })
+    }
     res.send(createUser)
 })
 
 app.put('/api/users/:id', async (req: Request, res: Response) => {
-    const updateUser = await prisma.user.update({
-        where: {
-            id: req.params.id
-        },
-        data: req.body
-    })
+    const updateUser = {
+        data: await prisma.user.update({
+            where: {
+                id: req.params.id
+            },
+            data: req.body
+        })
+    }
     res.send(updateUser)
 })
 
 app.delete('/api/users/:id', async (req: Request, res: Response) => {
-    const deleteUser = await prisma.user.delete({
-        where: {
-            id: req.params.id
-        }
-    })
+    const deleteUser = {
+        data: await prisma.user.delete({
+            where: {
+                id: req.params.id
+            }
+        })
+    }
     res.send(deleteUser)
 })
 
