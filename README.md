@@ -2,7 +2,6 @@
 
 This is an API project that I made when I was learning **Prisma**. I'm using Supabase (postgres) as the database but you could use other databases, [click here to learn more about databases.](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch)
 
-My project is hosted on **Cyclic**.
 
 ## Prisma Model
 This is the **Prisma** Model that I use for this project:
